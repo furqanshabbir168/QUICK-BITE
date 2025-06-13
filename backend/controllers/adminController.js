@@ -1,7 +1,7 @@
 import adminModel from "../models/adminModel.js";
 import jwt from 'jsonwebtoken';
 import validator from 'validator';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 dotenv.config();
 
