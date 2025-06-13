@@ -1,0 +1,98 @@
+/* Container */
+.additems {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px; /* was 30px */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Less spacing between form sections */
+  .additems-form > div {
+    margin-bottom: 16px; /* was 20px */
+  }
+  
+  /* Upload Image */
+  .upload-img label img {
+    width: 120px; /* was 150px */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Inputs & Textarea with reduced padding */
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    padding: 8px 10px; /* was 10px 12px */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  /* Textarea shorter min height */
+  textarea {
+    resize: vertical;
+    min-height: 60px; /* was 80px */
+  }
+  
+  /* Button with reduced height */
+  .button button {
+    background-color: tomato;
+    color: white;
+    padding: 10px 20px; /* was 12px 25px */
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  .button button:hover{
+    opacity: 0.7;
+  }
+  .button button:active{
+    opacity: 0.5;
+  }
+  
+  
+  @media (max-width: 768px) {
+  .additems {
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .additems-form > div {
+    margin-bottom: 12px;
+  }
+
+  .upload-img label img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  textarea {
+    min-height: 50px;
+  }
+
+  .button button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+}

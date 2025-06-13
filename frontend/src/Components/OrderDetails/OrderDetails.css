@@ -1,0 +1,176 @@
+.order-details {
+    padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  
+}
+
+.order-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-order {
+  display: flex;
+  gap: 100px;
+  border: 1px solid black;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  align-items: center;
+  
+}
+
+.my-order img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 4px;
+}
+.order-name p{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.my-order p {
+  color: #444;
+}
+
+.my-order > div {
+  flex: 1;
+}
+
+.foodstatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+  box-shadow: 0 0 5px tomato;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: tomato;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(244, 121, 99);
+}
+.order-names-column {
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  overflow-y: auto;
+  min-width: 150px;
+}
+
+
+
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  button {
+    margin-top: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 13px;
+    border-radius: 2px;
+  }
+
+  .order-names-column {
+    max-height: 80px;
+    min-width: 100px;
+  }
+
+
+  @media (max-width: 600px) {
+  .order-details {
+    padding: 0.8rem;
+    margin-top: 170px;
+  }
+
+  .order-heading h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .orders {
+    gap: 6px;
+  }
+
+  .my-order {
+    gap: 12px;
+    padding: 0.8rem;
+  }
+
+  .my-order img {
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+  }
+
+  .order-name p {
+    max-width: 120px;
+    font-size: 11px;
+  }
+
+  .my-order p {
+    color: #444;
+    font-size: 11px;
+  }
+
+  .my-order > div {
+    flex: 1;
+  }
+
+  .foodstatus {
+    gap: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.6rem;
+    font-size: 11px;
+    border-radius: 2px;
+    width: 80px;
+    font-size: 8px;
+  }
+
+  .order-names-column {
+    max-height: 70px;
+    min-width: 90px;
+  }
+}
+
+
+

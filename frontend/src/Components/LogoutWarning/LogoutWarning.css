@@ -1,0 +1,90 @@
+.logout-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* ensures it's on top */
+}
+
+.popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel-btn,
+.logout-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 480px) {
+  .popup {
+    width: 90% !important;
+    padding: 1rem 0.8rem !important;
+    font-size: 14px !important;
+  }
+
+  .popup * {
+    font-size: 14px !important;
+  }
+
+  .buttons {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-top: 1rem !important;
+  }
+
+  .cancel-btn,
+  .logout-btn {
+    flex: 1 1 48% !important;
+    padding: 0.4rem 0 !important;
+    font-size: 14px !important;
+    min-width: auto !important;
+  }
+
+  .cancel-btn {
+    background-color: #ccc !important;
+  }
+
+  .logout-btn {
+    background-color: #e74c3c !important;
+  }
+}

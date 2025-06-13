@@ -1,0 +1,83 @@
+.logout-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* ensures it's on top */
+}
+
+.popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgb(71, 71, 71);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel-btn,
+.logout-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+  .popup {
+    padding: 1rem;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  .popup h2, .popup p {
+    font-size: 10px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .cancel-btn,
+  .logout-btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}

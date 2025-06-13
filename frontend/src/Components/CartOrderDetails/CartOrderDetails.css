@@ -1,0 +1,120 @@
+.cart-order-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.cart-order-details-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 350px;
+}
+.cart-order-details-left p, h1, h3{
+    color: rgb(84, 84, 84);
+}
+.cart-order-details-left hr{
+    border: 1px solid rgb(193, 192, 192);
+}
+.cart-order-details-left button{
+    height: 35px;
+    background-color: rgb(232, 80, 54);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 0.25s ease;
+}
+.cart-order-details-left button:hover{
+    background-color: tomato;
+}
+.cart-order-details-right p{
+    color: gray;
+    padding: 10px;
+}
+.cart-order-details-right input{
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+.cart-order-details-right button.submit{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    padding-bottom: 25px;
+}
+.cart-order-details-right button:hover{
+    background-color: rgb(61, 61, 61);
+}
+.cart-order-details-left .total{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-order-details-right .error-message{
+    font-size: 13px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+  .cart-order-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .cart-order-details-left,
+  .cart-order-details-right {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+  }
+  .cart-order-details-left h1{
+    font-size: 25px;
+  }
+
+  .cart-order-details-left .total {
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  .cart-order-details-left button {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 14px;
+    align-self: flex-start;
+  }
+
+  .cart-order-details-right input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    margin: 5px auto;
+    display: block;
+  }
+
+  .cart-order-details-right button.submit {
+    width: 79%;
+    padding: 8px 18px;
+    font-size: 14px;
+    margin: 10px auto;
+    display: block;
+    padding-bottom: 27px;
+  }
+
+  .cart-order-details-right p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .cart-order-details-right .error-message {
+    text-align: center;
+  }
+}

@@ -1,0 +1,107 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white; /* Ensures navbar doesn't overlap invisibly */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+/* Add top padding/margin to body or first section to avoid content being hidden */
+body {
+    margin-top: 120px; /* Adjust according to navbar height */
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-left h1 {
+    color: rgb(254, 62, 28);
+    font-size: 35px;
+}
+
+.navbar-left p {
+    color: gray;
+}
+
+.navbar-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.navbar-right button{
+    width: 150px;
+    border: 1px solid black;
+    color: black;
+    height: 50px;
+    border-radius: 25px;
+    background: none;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+.navbar-right button:hover{
+    color: tomato;
+
+}
+.navbar-right button:active{
+    background-color: rgb(255, 188, 177);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar-left {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-left h1 {
+        font-size: 24px;
+    }
+
+    .navbar-left p {
+        font-size: 12px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar-right button {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .navbar-right img {
+        width: 40px;
+        height: 40px;
+    }
+
+    body {
+        margin-top: 180px; /* Slightly more margin if navbar height increases on mobile */
+    }
+}

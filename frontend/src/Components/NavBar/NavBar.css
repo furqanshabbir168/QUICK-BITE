@@ -1,0 +1,198 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px -2px black;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+}
+.navbar-left h1{
+    font-size: 50px;
+    color: rgb(249, 78, 47);
+}
+.navbar-middle ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    color: rgb(101, 101, 101);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.navbar-middle ul .active{
+    border-bottom: 5px solid tomato;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 5px;
+}
+.navbar-right{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+.navbar-right img{
+    width: 25px;
+    height: 25px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.navbar-right img:hover{
+    opacity: 0.7;
+}
+.navbar-right button{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+.navbar-right button:hover{
+   color: tomato;
+   background-color: white;
+}
+.navbar-middle a{
+    text-decoration: none;
+    color: grey;
+}
+.user-info {
+    position: relative;
+    display: inline-block;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 120px;
+    z-index: 100;
+    border: 2px solid tomato;
+    text-decoration: none;
+}
+
+.user-info:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+}
+
+.dropdown li:hover {
+    background-color: rgb(247, 140, 121);
+    border-radius: 5px;
+}
+.order{
+    text-decoration: none;
+    color: black;
+}
+
+/* Base styles stay as they are */
+
+/* Responsive for tablets and mobiles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;    /* CENTER EVERYTHING horizontally */
+    padding: 15px 20px;
+    height: auto;
+  }
+.dropdown{
+  top: 30px;
+}
+
+  .navbar-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* center logo */
+    margin-bottom: 15px;
+  }
+
+  .navbar-left h1 {
+    font-size: 30px;
+  }
+
+  .navbar-middle {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center nav links */
+    margin-bottom: 15px;
+  }
+
+  .navbar-middle ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-middle ul li {
+    list-style: none;
+  }
+
+  .navbar-right {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center right items */
+    gap: 15px;
+  }
+
+  .navbar-right button {
+    width: 70px;
+    height: 30px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left h1 {
+    font-size: 24px;
+  }
+
+  .navbar-middle ul {
+    gap: 10px;
+  }
+  .dropdown{
+    top: 20px;
+  }
+
+  .navbar-right button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .navbar-right img {
+    width: 25px;
+    height: 25px;
+  }
+}

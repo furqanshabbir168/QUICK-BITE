@@ -1,0 +1,129 @@
+.company{
+    margin-top: 60px;
+    padding: 100px;
+}
+.company .aboutus{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.company .aboutus h1{
+    font-size: 45px;
+    color: rgb(101, 101, 101);
+}
+.company .aboutus h2{
+    color: black;
+}
+.company .aboutus p{
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+}
+.company .delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.company .delivery h1{
+    font-size: 45px;
+    color: rgb(101, 101, 101);
+}
+.company .delivery h2{
+    color: black;
+}
+.company .delivery p{
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+}
+.company .privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.company .privacy h1{
+    font-size: 45px;
+    color: rgb(101, 101, 101);
+}
+.company .privacy h2{
+    color: black;
+}
+.company .privacy p{
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+}
+
+
+/* Base styles stay the same */
+
+/* Tablet-friendly adjustments */
+@media (max-width: 1024px) {
+  .company {
+    padding: 60px;
+    margin-top: 150px;
+  }
+
+  .company .aboutus h1,
+  .company .delivery h1,
+  .company .privacy h1 {
+    font-size: 36px;
+  }
+
+  .company .aboutus p,
+  .company .delivery p,
+  .company .privacy p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .company {
+    padding: 40px 20px;
+  }
+
+  .company .aboutus h1,
+  .company .delivery h1,
+  .company .privacy h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .company .aboutus h2,
+  .company .delivery h2,
+  .company .privacy h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .company .aboutus p,
+  .company .delivery p,
+  .company .privacy p {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  .company {
+    padding: 30px 15px;
+    margin-top: 40px;
+  }
+
+  .company .aboutus h1,
+  .company .delivery h1,
+  .company .privacy h1 {
+    font-size: 24px;
+  }
+
+  .company .aboutus h2,
+  .company .delivery h2,
+  .company .privacy h2 {
+    font-size: 18px;
+  }
+
+  .company .aboutus p,
+  .company .delivery p,
+  .company .privacy p {
+    font-size: 14px;
+  }
+}
